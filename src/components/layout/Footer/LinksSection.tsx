@@ -82,32 +82,32 @@ const footerLinksData: FooterLinks[] = [
       },
     ],
   },
-  {
-    id: 4,
-    title: "resources",
-    children: [
-      {
-        id: 41,
-        label: "Free eBooks",
-        url: "#",
-      },
-      {
-        id: 42,
-        label: "development tutorial",
-        url: "#",
-      },
-      {
-        id: 43,
-        label: "How to - Blog",
-        url: "#",
-      },
-      {
-        id: 44,
-        label: "youtube playlist",
-        url: "#",
-      },
-    ],
-  },
+  // {
+  //   id: 4,
+  //   title: "resources",
+  //   children: [
+  //     {
+  //       id: 41,
+  //       label: "Free eBooks",
+  //       url: "#",
+  //     },
+  //     {
+  //       id: 42,
+  //       label: "development tutorial",
+  //       url: "#",
+  //     },
+  //     {
+  //       id: 43,
+  //       label: "How to - Blog",
+  //       url: "#",
+  //     },
+  //     {
+  //       id: 44,
+  //       label: "youtube playlist",
+  //       url: "#",
+  //     },
+  //   ],
+  // },
 ];
 
 const LinksSection = () => {

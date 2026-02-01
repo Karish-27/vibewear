@@ -10,6 +10,7 @@ export type Color = {
 interface ProductsState {
   colorSelection: Color;
   sizeSelection: string;
+  searchQuery: string;
 }
 
 // Define the initial state using that type
@@ -19,6 +20,7 @@ const initialState: ProductsState = {
     code: "bg-[#4F4631]",
   },
   sizeSelection: "Large",
+  searchQuery: "",
 };
 
 export const productsSlice = createSlice({
@@ -32,9 +34,12 @@ export const productsSlice = createSlice({
     setSizeSelection: (state, action: PayloadAction<string>) => {
       state.sizeSelection = action.payload;
     },
+    setSearchQuery: (state, action: PayloadAction<string>) => {
+      state.searchQuery = action.payload;
+    },
   },
 });
 
-export const { setColorSelection, setSizeSelection } = productsSlice.actions;
+export const { setColorSelection, setSizeSelection, setSearchQuery } = productsSlice.actions;
 
 export default productsSlice.reducer;
